@@ -11,4 +11,29 @@
   font-style: normal;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Change Swiper Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important; /* Change arrow color */
+}
+/* Change Swiper Pagination Dots Color */
+.swiper-pagination-bullet {
+  background-color: black !important; /* Change to your preferred color */
+  opacity: 0.5; /* Adjust transparency */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* Change active dot color */
+  opacity: 1;
+}
+
 
