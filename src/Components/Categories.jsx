@@ -23,10 +23,20 @@ const ProductGrid = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div>
+{/* Title */}
+<div className="flex flex-col items-center justify-center">
+<h3 className="text-xl font-[New] text-gray-500 tracking-widest ">THE PRODUCTS</h3>
+      <h2 className="text-6xl  font-[Heading] text-black">Watch Product</h2>
+      <div className="w-16 h-1 bg-red-500 mx-auto mt-2 mb-6"></div>
+</div>
+
+
+    <div className="flex flex-col md:flex-row font-[sml]">
+      
       {/* Sidebar Filter */}
       <motion.div
-        className={`bg-white p-4 shadow-md md:w-1/4 fixed md:relative top-0 left-0 h-full transition-transform transform ${
+        className={`bg-white p-4 shadow-md md:w-1/4 fixed md:relative top-15 left-0 h-full transition-transform transform ${
           isFilterOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >
@@ -95,6 +105,7 @@ const ProductGrid = () => {
           )}
         </motion.div>
       </div>
+    </div>
     </div>
   );
 };

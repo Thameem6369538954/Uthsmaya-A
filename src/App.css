@@ -1,12 +1,24 @@
 @font-face {
   font-family: "Cur";
-  src: url("../public//Fonts/Writeline.ttf") format("truetype"); /* Use correct path */
+  src: url("../public/Fonts/Callifornia\ Signature.ttf") format("truetype"); /* Use correct path */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "sml";
-  src: url("../public/Fonts/TA-Fabricans-Thin.ttf") format("truetype"); /* Use correct path */
+  src: url("../public/Fonts/Poppins-ExtraLight.ttf") format("truetype"); /* Use correct path */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heading";
+  src: url("../public/Fonts/VELISTA.ttf") format("truetype"); /* Use correct path */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "New";
+  src: url("../public/Fonts/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype"); /* Use correct path */
   font-weight: normal;
   font-style: normal;
 }

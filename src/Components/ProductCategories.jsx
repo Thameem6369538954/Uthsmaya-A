@@ -6,6 +6,7 @@ import Mag from "../cateImg/Mag.png";
 import Award from "../cateImg/Award.png";
 
 const products = [
+  { name: "All", image: Watch, bg: "bg-gradient-to-b from-[#4190bb] to-[#eebf77]" },
   { name: "Watch", image: Watch, bg: "bg-gradient-to-b from-[#4190bb] to-[#eebf77]" },
   { name: "lunchboxes", image: Lunch, bg: "bg-gradient-to-b from-blue-100 to-[#EDE2D5]" },
   { name: "Tea Coasters", image: Mag, bg: "bg-gradient-to-t from-[#E9E1D7] to-yellow-200" },
@@ -31,13 +32,9 @@ const ProductCategories = () => {
 
   return (
     <div className="text-center py-10">
-      {/* Title */}
-      <h3 className="text-sm text-gray-500 tracking-widest">THE PRODUCTS</h3>
-      <h2 className="text-3xl font-bold text-black">Watch Product</h2>
-      <div className="w-16 h-1 bg-red-500 mx-auto mt-2 mb-6"></div>
-
+      
       {/* Carousel Container */}
-      <div className="overflow-hidden relative w-full">
+      <div className="overflow-hidden relative w-full font-[sml]">
         <motion.div
           ref={scrollRef}
           className="flex gap-6 py-6 px-4 hide-scrollbar"
@@ -57,7 +54,7 @@ const ProductCategories = () => {
                 alt={product.name}
                 className="w-24 h-24 object-contain"
               />
-              <p className="text-gray-700 mt-2">{product.name}</p>
+              <p className="text-black font-[sml] text-xl mt-2 ">{product.name}</p>
             </motion.div>
           ))}
         </motion.div>
