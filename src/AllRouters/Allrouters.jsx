@@ -5,6 +5,8 @@ import Navbar from '../Components/Navbar'
 import ProductDetails from '../Components/ProductDetails'
 import Cart from '../Pages/Cart' 
 import Checkout from '../Pages/Checkout'
+import Footer from '../Components/Footer'
+import Categories from "../Components/Categories"
 
 const Allrouters = () => {
   return (
@@ -15,7 +17,9 @@ const Allrouters = () => {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/Cart" element={<Cart />} />
         <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/Categories" element={<Categories />} />
         </Routes>
+        <Footer />
     </div>
   )
 }

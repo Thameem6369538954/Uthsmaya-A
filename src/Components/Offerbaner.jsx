@@ -10,7 +10,7 @@ const Offerbaner = () => {
             backgroundSize:"cover",
             backgroundPosition:"center"
         }}
-        className=" min-h-[350px] w-full max-w-6xl rounded-sm">
+        className=" min-h-[350px] w-[90%] max-w-6xl rounded-sm">
             <div className=" w-full max-w-xl min-h-[350px] flex flex-col items-center justify-center">
           <h1 className="font-[Heading] text-5xl text-white">Big Sale Offer</h1>
             <p className="font-[Cur] text-5xl text-white">Coming Zoon..........</p>

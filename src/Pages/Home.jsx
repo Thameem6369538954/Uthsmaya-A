@@ -7,6 +7,8 @@ import Gridbox from '../Components/Gridbox'
 import ProductCarousel from '../Components/ProductCarouselA'
 import Carob from "../Components/Carob"
 import Offerbaner from '../Components/Offerbaner'
+import ShowcaseCom from '../Components/ShowcaseCom'
+import TestimonialCarousel from '../Components/TestimonialCarousel'
 
 const Home = () => {
   return (
@@ -14,11 +16,14 @@ const Home = () => {
        {/* <Header /> */}
        <BannerCarousel />
        <ProductCategories />
-       <Categories />
+       <ShowcaseCom />
+       {/* <Categories /> */}
        <Gridbox />
        <ProductCarousel />
        <Offerbaner />
+
        <Carob />
+       <TestimonialCarousel />
     </div>
   )
 }

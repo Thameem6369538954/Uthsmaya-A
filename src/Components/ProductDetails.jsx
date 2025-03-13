@@ -19,7 +19,7 @@ const ProductDetails = () => {
     .slice(-5); // Get last 5 products
 
   return (
-    <div className="p-6 max-w-8xl mx-auto mt-25 shadow-md rounded-lg">
+    <div className="p-6 max-w-8xl mx-auto mt-25 shadow-md rounded-lg font-[sml]">
       {/* Product Details */}
       <div className="flex flex-col md:flex-row items-center md:items-start justify-around">
         <img src={product.image} alt={product.name} className="w-64 object-cover rounded-md" />
