@@ -31,10 +31,10 @@ const ProductCategories = () => {
   
 
   return (
-    <div className="text-center py-10">
+    <div className="text-center py-2  mt-20">
       
       {/* Carousel Container */}
-      <div className="overflow-hidden relative w-full font-[sml]">
+      <div className="overflow-hidden relative w-full font-[sml] border border-black rounded-full">
         <motion.div
           ref={scrollRef}
           className="flex gap-6 py-6 px-4 hide-scrollbar"
@@ -45,14 +45,14 @@ const ProductCategories = () => {
 
             <motion.div
               key={index}
-              className={`flex flex-col items-center ${product.bg} p-6 rounded-xl shrink-0`}
+              className={`flex flex-col items-center p-6 rounded-xl shrink-0`}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-24 h-24 object-contain"
+                className="w-18 h-18 object-contain"
               />
               <p className="text-black font-[sml] text-xl mt-2 ">{product.name}</p>
             </motion.div>

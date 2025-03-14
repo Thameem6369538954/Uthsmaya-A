@@ -4,7 +4,7 @@ import logo from "../Images/logo.png"
 const Footer = () => {
   return (
     <div>
-        <footer class="bg-gradient-to-r from-rose-300 to-rose-500 text-white py-10 font-[sml]">
+        <footer class="bg-[#dbeee8] text-black py-10 font-[sml]">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
         {/* <!-- Company Info --> */}
         <div>
@@ -31,10 +31,10 @@ const Footer = () => {
         <div>
             <h3 class="font-semibold text-lg mb-3">Popular</h3>
             <ul class="space-y-2">
-                <li><a href="#" class="text-gray-300 hover:text-white">T-Shirts</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Bags</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Gadgets</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Corporate Gifts</a></li>
+                <li><a href="#" class="text-black hover:text-blue-600">T-Shirts</a></li>
+                <li><a href="#" class="text-black hover:text-blue-600">Bags</a></li>
+                <li><a href="#" class="text-black hover:text-blue-600">Gadgets</a></li>
+                <li><a href="#" class="text-black hover:text-blue-600">Corporate Gifts</a></li>
             </ul>
         </div>
 
@@ -50,8 +50,8 @@ const Footer = () => {
     </div>
 
     {/* <!-- Copyright --> */}
-    <div class="text-center text-white text-sm mt-8 border-t border-white pt-4">
-        Copyright © 2025 All Rights Reserved | Powered by <a href="#" class="text-[#fff8ef] hover:underline">Disha Medias</a>
+    <div class="text-center text-black text-sm mt-8 border-t border-white pt-4">
+        Copyright © 2025 All Rights Reserved | Powered by <a href="#" class="text-red-600 hover:underline">Disha Medias</a>
     </div>
 </footer>
 
