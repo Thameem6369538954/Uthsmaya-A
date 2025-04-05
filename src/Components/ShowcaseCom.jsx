@@ -58,7 +58,27 @@ const ShowcaseCom = () => {
       onSale: true,
     },
     {
-      id: 6,
+      id: 7,
+      title: "Eco-Friendly Bags",
+      image: "/images/eco-bags.jpg",
+      alternateImage: "/images/eco-bags-alt.jpg",
+      discountPrice: 40,
+      originalPrice: 45,
+      category: "Reusable Bags",
+      onSale: false,
+    },
+    {
+      id: 8,
+      title: "Eco-Friendly Bags",
+      image: "/images/eco-bags.jpg",
+      alternateImage: "/images/eco-bags-alt.jpg",
+      discountPrice: 40,
+      originalPrice: 45,
+      category: "Reusable Bags",
+      onSale: false,
+    },
+    {
+      id: 9,
       title: "Eco-Friendly Bags",
       image: "/images/eco-bags.jpg",
       alternateImage: "/images/eco-bags-alt.jpg",
@@ -97,7 +117,7 @@ const ShowcaseCom = () => {
                 <img
                   src={hovered ? product.alternateImage : product.image}
                   alt={product.title}
-                  className="w-full h-88 object-fit rounded-lg transition-opacity duration-100"
+                  className="w-full h-88 object-cover rounded-lg transition-opacity duration-100"
                   onMouseEnter={() => setHovered(true)}
                   onMouseLeave={() => setHovered(false)}
                 />

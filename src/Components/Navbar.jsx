@@ -23,7 +23,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.5, ease: "easeOut" }}
-      className="bg-white shadow-md fixed w-full top-0 left-0 z-50 font-[sml]"
+      className="bg-[#f5efe1] shadow-md fixed w-full top-0 left-0 z-50 font-[sml]"
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}

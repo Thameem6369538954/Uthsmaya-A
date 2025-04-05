@@ -13,11 +13,11 @@ import TestimonialCarousel from '../Components/TestimonialCarousel'
 const Home = () => {
   return (
     <div>
-       {/* <Header /> */}
-       {/* <BannerCarousel /> */}
+       <Header />
+       <BannerCarousel />
        <ProductCategories />
        <ShowcaseCom />
-       {/* <Categories /> */}
+       <Categories />
        <Gridbox />
        <ProductCarousel />
        <Offerbaner />
