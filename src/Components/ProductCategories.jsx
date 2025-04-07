@@ -5,6 +5,7 @@ import Lunch from "../cateImg/Lunch.png";
 import Mag from "../cateImg/Mag.png";
 import Award from "../cateImg/Award.png";
 import Gift from "../cateImg/gift.jpg";
+import Book from "../cateImg/Book.jpg";
 
 const products = [
   { name: "All", image: Watch, bg: "bg-gradient-to-b from-[#4190bb] to-[#eebf77]" },
@@ -13,7 +14,7 @@ const products = [
   { name: "Tea Coasters", image: Mag, bg: "bg-gradient-to-t from-[#E9E1D7] to-yellow-200" },
   { name: "Awards", image: Award, bg: "bg-gradient-to-t from-[#f5f4f1] to-gray-900" },
   { name: "Gift", image: Gift, bg: "bg-gradient-to-b from-purple-300 to-indigo-600" },
-  { name: "Lemon Blast", image: Watch, bg: "bg-gradient-to-br from-teal-400 to-green-500" },
+  { name: "Book", image: Book, bg: "bg-gradient-to-br from-teal-400 to-green-500" },
   { name: "Tropical Mix", image: Watch, bg: "bg-gradient-to-r from-indigo-400 to-cyan-400" },
   { name: "Berry Punch", image: Watch, bg: "bg-gradient-to-r from-indigo-200 to-yellow-100" },
   { name: "Vanilla Dream", image: Watch, bg: "bg-gradient-to-r from-gray-600 to-gray-900" },

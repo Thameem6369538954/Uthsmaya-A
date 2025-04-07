@@ -15,7 +15,7 @@ const banners = [
 
 const BannerCarousel = () => {
   return (
-    <div className="w-full h-[50vh] mt-22">
+    <div className="w-full h-[50vh]">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
