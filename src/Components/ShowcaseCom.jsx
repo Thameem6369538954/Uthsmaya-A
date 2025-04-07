@@ -2,50 +2,59 @@ import React, { useState } from "react";
 import Watch from "../Images/Watch.jpg";
 // import WatchAlt from "../Images/Watch-alt.jpg"; // Alternate image for Watch
 import Clock from "../Images/Clock.jpg";
-import Watchalt from "../Images/Watchalt.jpg"; // Alternate image for Clock
+import Watchalt from "../Images/Watchalt.jpg";
+import TshirtA from "../Images/sky-blue.jpg"
+import TshirtB from "../Images/sky.jpg"
+// Alternate image for Clock
+import hooda from "../Images/hoodie.png"
+import Hdb from "../ProImg/Hdb.webp"
+import Grn from "../ProImg/GrnT.png"
+import GrnA from "../ProImg/GrnTA.jpg"
+import Jack from "../ProImg/jacket.png"
+import JackA from "../ProImg/river-island-black.webp"
 
 const ShowcaseCom = () => {
   // Product Data Inside Component
   const products = [
     {
       id: 1,
-      title: "Elegant Watch",
-      image: Watch,
-      alternateImage: Watchalt,
+      title: "Fling Polo T-Shirt",
+      image: TshirtA,
+      alternateImage: TshirtB,
       discountPrice: 40,
       originalPrice: 45,
-      category: "Watches",
+      category: "T-Shirt",
       onSale: true,
     },
     {
       id: 2,
-      title: "Eco-Friendly Products",
-      image: Clock,
-      alternateImage: Watchalt,
+      title: "Yellow Hoodie",
+      image: hooda,
+      alternateImage: Hdb,
       discountPrice: 40,
       originalPrice: 45,
-      category: "Cups",
+      category: "Hoodis",
       onSale: false,
     },
     {
       id: 3,
-      title: "The Power of Subconscious Mind",
-      image: "/images/book.jpg",
-      alternateImage: "/images/book-alt.jpg",
+      title: "Bio Tees Round Neck",
+      image: Grn,
+      alternateImage: GrnA,
       discountPrice: 40,
       originalPrice: 45,
-      category: "Books",
+      category: "T-shirt",
       onSale: false,
     },
     {
       id: 4,
-      title: "Yoga Mat",
-      image: "/images/yoga-mat.jpg",
-      alternateImage: "/images/yoga-mat-alt.jpg",
+      title: "Jacket",
+      image: Jack,
+      alternateImage: JackA,
       discountPrice: 50,
       originalPrice: 60,
-      category: "Yoga Mats",
-      onSale: false,
+      category: "Jackets",
+      onSale: true,
     },
     {
       id: 5,
@@ -90,9 +99,9 @@ const ShowcaseCom = () => {
   ];
 
   return (
-    <div className="bg-[#f7f1e3] py-10 px-6 font-[sml]">
+    <div className="bg-[#fcfbfb] py-10 px-6 font-[sml]">
       <div className="max-w-9xl mx-auto">
-        <h2 className="text-3xl md:text-7xl font-[Heading] text-center mb-10">
+        <h2 className="text-3xl md:text-7xl font-[Heading] text-gray-500 text-center mb-10 ">
           Featured Products
         </h2>
 
@@ -140,12 +149,12 @@ const ShowcaseCom = () => {
 
                 {/* Pricing */}
                 <div className="flex items-center justify-center mt-3">
-                  <p className="text-red-500 text-lg font-bold">
-                    ${product.discountPrice}
-                  </p>
-                  <p className="text-gray-400 line-through ml-2">
-                    ${product.originalPrice}
-                  </p>
+                  {/* <p className="text-red-500 text-lg font-bold">
+                    ₹{product.discountPrice}
+                  </p> */}
+                  {/* <p className="text-gray-400 line-through ml-2">
+                    ₹{product.originalPrice}
+                  </p> */}
                 </div>
 
                 {/* Category */}

@@ -13,8 +13,9 @@ import TestimonialCarousel from '../Components/TestimonialCarousel'
 const Home = () => {
   return (
     <div>
-       <Header />
+       {/* <Header /> */}
        <BannerCarousel />
+       <h1 className='text-5xl font-[New] text-gray-500 tracking-widest text-center'>Uthsmaya !!  The trusted corporate gifting company in Chennai you have been looking For!!</h1>
        <ProductCategories />
        <ShowcaseCom />
        <Categories />

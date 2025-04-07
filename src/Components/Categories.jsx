@@ -27,7 +27,7 @@ const ProductGrid = () => {
 {/* Title */}
 <div className="flex flex-col items-center justify-center">
 <h3 className="text-xl font-[New] text-gray-500 tracking-widest ">THE PRODUCTS</h3>
-      <h2 className="text-6xl  font-[Heading] text-black">Watch Product</h2>
+      <h2 className="text-6xl  font-[Heading] text-gray-500 tracking-wide text-black">All  Product</h2>
       <div className="w-16 h-1 bg-red-500 mx-auto mt-2 mb-6"></div>
 </div>
 
@@ -88,8 +88,8 @@ const ProductGrid = () => {
                     ))}
                   </div>
                   <div className="flex items-center mt-2">
-                    <p className="text-red-500 font-bold text-lg">${product.discountedPrice}</p>
-                    <p className="text-gray-400 text-sm line-through ml-2">${product.price}</p>
+                    <p className="text-red-500 font-bold text-lg">₹{product.discountedPrice}</p>
+                    <p className="text-gray-400 text-sm line-through ml-2">₹{product.price}</p>
                   </div>
                   {product.tags?.includes("SALE") && (
                     <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded flex items-center">

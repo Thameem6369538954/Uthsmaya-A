@@ -5,14 +5,14 @@ import { Star } from "lucide-react";
 import Watch from "../Images/Watch.jpg";
 
 const products = [
-  { id: 1, name: "Luxury Watch", price: "$199.99", rating: 4.5, image: Watch },
-  { id: 2, name: "Classic Watch", price: "$149.99", rating: 4.0, image: Watch },
-  { id: 3, name: "Sports Watch", price: "$129.99", rating: 4.2, image: Watch },
-  { id: 4, name: "Smart Watch", price: "$249.99", rating: 4.8, image: Watch },
-  { id: 5, name: "Vintage Watch", price: "$179.99", rating: 4.3, image: Watch },
-  { id: 6, name: "Minimalist Watch", price: "$99.99", rating: 4.1, image: Watch },
-  { id: 7, name: "Elegant Watch", price: "$219.99", rating: 4.6, image: Watch },
-  { id: 8, name: "Digital Watch", price: "$89.99", rating: 4.0, image: Watch },
+  { id: 1, name: "Luxury Watch", price: "₹199.99", rating: 4.5, image: Watch },
+  { id: 2, name: "Classic Watch", price: "₹149.99", rating: 4.0, image: Watch },
+  { id: 3, name: "Sports Watch", price: "₹129.99", rating: 4.2, image: Watch },
+  { id: 4, name: "Smart Watch", price: "₹249.99", rating: 4.8, image: Watch },
+  { id: 5, name: "Vintage Watch", price: "₹179.99", rating: 4.3, image: Watch },
+  { id: 6, name: "Minimalist Watch", price: "₹99.99", rating: 4.1, image: Watch },
+  { id: 7, name: "Elegant Watch", price: "₹219.99", rating: 4.6, image: Watch },
+  { id: 8, name: "Digital Watch", price: "₹89.99", rating: 4.0, image: Watch },
 ];
 
 const ProductCarousel = () => {
