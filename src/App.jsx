@@ -4,13 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Allrouters from './AllRouters/Allrouters'
+import ConfettiWrapper from "../src/ConfettiWrapper";
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (  
   <div>
+    <ConfettiWrapper>
     <Allrouters />
+    </ConfettiWrapper>
   </div>
   )
 }

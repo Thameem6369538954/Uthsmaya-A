@@ -1,50 +1,75 @@
-import React from "react";
-import { motion } from "framer-motion";
-import Hd from "../Images/Hd.jpg";
-import { HiOutlineShoppingCart } from "react-icons/hi";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Img1 from "../ProImg/Hdb.webp";
+import Img2 from "../ProImg/Gft.png";
+import Img3 from "../ProImg/Hst.png"; // Add more as needed
+import Img4 from "../ProImg/Wtc.png"; // Add more as needed
 
-const Header = () => {
-  const text =
-    "Uthsmaya!! The trusted corporate  gifting company in Chennai you have been looking for!!";
+const images = [Img1, Img2, Img3,Img4]; // Add more image imports to this array
+
+const ProductShowcase = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 2000); // Change image every 1 second
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${Hd})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="h-screen w-full flex items-center justify-center text-white font-[New] px-4 md:px-10"
-    >
-      <div className="text-center max-w-4xl">
-        {/* Animated Text */}
-        <motion.h1 className="text-xl sm:text-2xl md:text-3xl lg:text-7xl  leading-snug break-words">
-          {text.split("").map((char, index) => (
-            <motion.span
-              key={index}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.02 }}
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+    <section className="mt-20 md:mt-0 flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-gray-100 to-white px-6 md:px-16 py-7 md:py-24 font-sans overflow-hidden lg:min-h-[100vh]">
+      {/* Text Content */}
+      <motion.div
+        className="w-full lg:w-1/1 text-center lg:text-left space-y-6"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-4xl md:text-6xl font-extrabold text-[#ed1b24]">UTHS<span className="text-[#ffdf20]">MAYA...</span></h1>
 
-        {/* Button */}
+        <h2 className="text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-black text-[#e2e2e2] leading-none -mt-4 tracking-tight">
+          The Gift World
+        </h2>
+
+        <p className="text-gray-400 md:text-6xl font-[Jio] text-center lg:text-left">
+          The Trusted Corporate Gifting Company in Chennai You have Been Looking For!!
+        </p>
+
         <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: text.length * 0.02 + 0.2 }}
-          className="mt-6 px-6 py-3 flex items-center justify-center gap-2 text-sm sm:text-base md:text-lg font-[sml] text-[#ff0011] bg-white rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-200 mx-auto"
+          className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full text-sm md:text-base font-[sml] transition duration-300 shadow-lg"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
-          Shop Now
-          <HiOutlineShoppingCart className="text-xl" />
+          Shop By Category
         </motion.button>
-      </div>
-    </div>
+      </motion.div>
+
+      {/* Animated Image */}
+      <motion.div
+        className="w-full lg:w-1/2 flex justify-center items-center mb-12 lg:mb-0"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={index}
+            src={images[index]}
+            alt="Product"
+            className="w-[280px] sm:w-[350px] md:w-[420px] lg:w-[500px] object-contain"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5 }}
+          />
+        </AnimatePresence>
+      </motion.div>
+    </section>
   );
 };
 
-export default Header;
+export default ProductShowcase;

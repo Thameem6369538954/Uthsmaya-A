@@ -14,14 +14,13 @@ const Home = () => {
   return (
     <div>
        <Header />
-       <BannerCarousel />
        <ProductCategories />
        <ShowcaseCom />
-       <Categories />
        <Gridbox />
+       <BannerCarousel />
+       {/* <Categories /> */}
        <ProductCarousel />
        <Offerbaner />
-
        <Carob />
        <TestimonialCarousel />
     </div>

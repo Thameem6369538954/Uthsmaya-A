@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "Heading";
-  src: url("../public/Fonts/WonderfulChristmas_PERSONAL_USE_ONLY.ttf") format("truetype"); /* Use correct path */
+  src: url("../public/Fonts/LouraChesiaDemoRegular.ttf") format("truetype"); /* Use correct path */
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,7 @@
 }
 @font-face {
   font-family: "Jio";
-  src: url("../public/Fonts/VELISTA.ttf") format("truetype"); /* Use correct path */
+  src: url("../public/Fonts/Sacreditty\ Demo.ttf") format("truetype"); /* Use correct path */
   font-weight: normal;
   font-style: normal;
 }
