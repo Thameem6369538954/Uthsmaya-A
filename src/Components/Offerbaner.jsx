@@ -1,13 +1,13 @@
 import React from 'react';
 import KK from "../Images/KK.jpg";
-import POLICE from "../cateimg/POLICE.jpg"
+import Pol from "../cateimg/Pol.jpg"
 
-const Offerbaner = () => {
+const   Offerbaner = () => {
   return (
     <div className="w-full flex justify-center px-4">
       <div
-        style={{ backgroundImage: `url(${POLICE})` }}
-        className="min-h-[300px] sm:min-h-[350px] md:min-h-[400px] w-full max-w-9xl bg-cover bg-center rounded-lg flex items-center justify-start text-white text-center p-4"
+        style={{ backgroundImage: `url(${Pol})` }}
+        className="min-h-[300px] sm:min-h-[350px] md:min-h-[400px] w-full max-w-7xl bg-cover bg-center rounded-lg flex items-center justify-start text-white text-center p-4"
       >
         {/* <div className="bg-black bg-opacity-50 rounded-lg p-6 w-full max-w-xl">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-[Heading]">

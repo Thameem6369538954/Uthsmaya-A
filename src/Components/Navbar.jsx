@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu + Icons */}
-        <div className="hidden md:flex items-center space-x-6 text-xl">
+        <div className="hidden md:flex items-center space-x-6 text-md">
           {menuItems.map((item, index) => (
             <Link to={`/${item.toLowerCase()}`} key={index} className="text-gray-700 hover:text-pink-500">
               {item.split("").map((letter, i) => (

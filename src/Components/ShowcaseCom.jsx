@@ -14,6 +14,15 @@ import Jack from "../ProImg/jacket.png";
 import JackA from "../ProImg/river-island-black.webp";
 import OO from "../cateImg/OO.png";
 
+import HR from "../ProImg/HR.jpg"
+import HRA from "../ProImg/HRA.jpg"
+import Bx from "../ProImg/Bx.jpg"
+import Bxa from "../ProImg/Bxa.jpg"
+import Btl from "../ProImg/Btl.webp"
+import BtlA from "../ProImg/BtlA.webp"
+import pn from "../ProImg/pn.webp"
+import pna from "../ProImg/pna.webp"
+
 const ShowcaseCom = () => {
   const products = [
     {
@@ -28,22 +37,23 @@ const ShowcaseCom = () => {
     },
     {
       id: 2,
-      title: "Yellow Hoodie",
-      image: hooda,
-      alternateImage: Hdb,
-      discountPrice: 40,
-      originalPrice: 45,
-      category: "Hoodis",
-      onSale: false,
+      title: "Headphones",
+      image: HR,
+      alternateImage: HRA,
+      discountPrice: 90,
+      originalPrice: 100,
+      category: "Accessories",
+      onSale: true,
     },
     {
       id: 3,
-      title: "Bio Tees Round Neck",
-      image: Grn,
-      alternateImage: GrnA,
+
+      title: "Bottle",
+      image: Btl,
+      alternateImage: BtlA,
       discountPrice: 40,
       originalPrice: 45,
-      category: "T-shirt",
+      category: "Reusable Bags",
       onSale: false,
     },
     {
@@ -58,39 +68,42 @@ const ShowcaseCom = () => {
     },
     {
       id: 5,
-      title: "Headphones",
-      image: "/images/headphones.jpg",
-      alternateImage: "/images/headphones-alt.jpg",
-      discountPrice: 90,
-      originalPrice: 100,
-      category: "Accessories",
-      onSale: true,
+      title: "Yellow Hoodie",
+      image: hooda,
+      alternateImage: Hdb,
+      discountPrice: 40,
+      originalPrice: 45,
+      category: "Hoodis",
+      onSale: false,
+
+
+
     },
     {
       id: 7,
-      title: "Eco-Friendly Bags",
-      image: "/images/eco-bags.jpg",
-      alternateImage: "/images/eco-bags-alt.jpg",
+      title: "Pendrive",
+      image: pn,
+      alternateImage: pna,
       discountPrice: 40,
       originalPrice: 45,
-      category: "Reusable Bags",
+      category: "Accessories",
       onSale: false,
     },
     {
       id: 8,
-      title: "Eco-Friendly Bags",
-      image: "/images/eco-bags.jpg",
-      alternateImage: "/images/eco-bags-alt.jpg",
+      title: "Bio Tees Round Neck",
+      image: Grn,
+      alternateImage: GrnA,
       discountPrice: 40,
       originalPrice: 45,
-      category: "Reusable Bags",
+      category: "T-shirt",
       onSale: false,
     },
     {
       id: 9,
-      title: "Eco-Friendly Bags",
-      image: "/images/eco-bags.jpg",
-      alternateImage: "/images/eco-bags-alt.jpg",
+      title: "Gift Box",
+      image: Bx,
+      alternateImage: Bxa,
       discountPrice: 40,
       originalPrice: 45,
       category: "Reusable Bags",
@@ -103,6 +116,8 @@ const ShowcaseCom = () => {
       <div className="max-w-9xl mx-auto">
         {/* Title */}
         <div className="flex flex-col justify-center items-center min-h-10">
+        <h3 className="text-lg md:text-xl font-[New] text-gray-500 tracking-widest"> OUR NEW TRENDING</h3>
+
           <h2 className="relative text-3xl md:text-7xl font-[Heading] text-black text-center">
             Featured Products
           </h2>
